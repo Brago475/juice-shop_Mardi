@@ -7,3 +7,4 @@
 10020	WARN	Review framing protection
 10021	WARN	Review X-Content-Type-Options
 10038	WARN	Review Content-Security-Policy
+110009	FAIL	Backup and artifact files must not be reachable from the web root and must not disclose filesystem paths (CWE-209)
