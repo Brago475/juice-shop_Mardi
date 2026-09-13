@@ -57,9 +57,8 @@ jobs:
         uses: zaproxy/action-baseline@v0.14.0
         with:
           target: ${{ env.TARGET_URL }}
-          rules_file_name: .zap/rules.tsv
           cmd_options: >-
-            -a -m ${{ inputs.spider_minutes || '2' }} -T 10
+            -a -c /zap/wrk/.zap/rules.tsv -m ${{ inputs.spider_minutes || '2' }} -T 10
           fail_action: ${{ inputs.enforce_gate || false }}
           allow_issue_writing: false
           artifact_name: zap-baseline-report
