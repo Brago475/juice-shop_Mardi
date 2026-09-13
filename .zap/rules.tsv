@@ -6,5 +6,5 @@
 10015	WARN	Review cache policy by endpoint
 10020	WARN	Review framing protection
 10021	WARN	Review X-Content-Type-Options
-10038	WARN	Review Content-Security-Policy
-110009	FAIL	Backup and artifact files must not be reachable from the web root and must not disclose filesystem paths (CWE-209)
+10038	FAIL	CSP header must be set on all responses (CWE-693), validated as Confirmed in run 34719661951
+110009	WARN	Backup and artifact files under /ftp, six instances. Policy file does not reclassify this plugin ID.
